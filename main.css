@@ -4,3 +4,11 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+.announcement-bar{
+    background: #2f3a32;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;;
+}
