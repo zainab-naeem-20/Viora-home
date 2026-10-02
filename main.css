@@ -1,14 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
 
+:root {
+  /* =========================
+     BRAND COLORS
+  ========================= */
+  --color-primary: #354536;        /* Deep Sage / Forest Green */
+  --color-primary-dark: #27352A;   /* Dark Green */
+  --color-primary-light: #596A55;  /* Soft Green */
+
+  --color-secondary: #B58B5A;      /* Warm Gold / Caramel */
+  --color-secondary-light: #D2B58A; /* Light Gold */
+
+  /* =========================
+     BACKGROUND COLORS
+  ========================= */
+  --color-bg: #F8F6F0;             /* Main warm background */
+  --color-bg-white: #FFFFFF;       /* Pure white */
+  --color-bg-cream: #F1EDE3;       /* Cream */
+  --color-bg-beige: #E7DFD0;       /* Soft Beige */
+  --color-bg-sand: #D8C9B4;        /* Sand */
+
+  /* =========================
+     TEXT COLORS
+  ========================= */
+  --color-text: #292923;           /* Main text */
+  --color-text-dark: #1E241F;      /* Headings */
+  --color-text-medium: #5D5B51;    /* Secondary text */
+  --color-text-light: #858176;     /* Muted text */
+  --color-text-white: #FFFFFF;
+
+  /* =========================
+     BORDER COLORS
+  ========================= */
+  --color-border: #DDD8CC;
+  --color-border-light: #EAE6DD;
+  --color-border-dark: #C8C1B3;
+
+  /* =========================
+     CARD COLORS
+  ========================= */
+  --color-card: #FFFFFF;
+  --color-card-hover: #F5F2EA;
+
+  /* =========================
+     ACCENT COLORS
+  ========================= */
+  --color-sale: #8C4A3C;           /* Muted Terracotta */
+  --color-success: #526B52;
+  --color-star: #C99645;            /* Warm Gold */
+
+  /* =========================
+     SHADOWS
+  ========================= */
+  --shadow-sm: 0 2px 8px rgba(45, 45, 35, 0.08);
+  --shadow-md: 0 6px 20px rgba(45, 45, 35, 0.10);
+  --shadow-lg: 0 12px 35px rgba(45, 45, 35, 0.14);
+
+  /* =========================
+     RADIUS
+  ========================= */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* =========================
+     TRANSITIONS
+  ========================= */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+};
+
 
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 .announcement-bar{
+
     background: #2f3a32;
     color: white;
     overflow: hidden;
     white-space: nowrap;
-    padding: 10px 0;;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+
+.scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }

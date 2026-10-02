@@ -2,9 +2,18 @@ Preloader Section:
 
 Headline Text:
 
-✨ Elevate Your Space • Free Shipping • New Home Decor Collection ✨
+✨ Elevate Your Space • Curated Decor for Beautiful Living • New Arrivals Just Dropped • Make Your Home Beautiful, Your Way ✨
 
 Hero Section Text:
+
+Heading
+Make Your Space Beautifully Yours.
+
+Subheading
+Discover timeless home décor pieces, thoughtfully curated to bring warmth, character, and effortless style to every corner of your home.
+
+Button
+Explore Collection →
 
 About Us Content:
 
@@ -13,3 +22,13 @@ Featured Section:
 Product Categories & Descriptions:
 
 Contact & Footer Info:
+
+
+colours 
+
+Deep Green #354536 → buttons, navbar accents, important sections
+Cream #F8F6F0 → overall background
+Warm Beige #E7DFD0 → sections/cards
+Dark Charcoal #292923 → headings
+Muted Gold #B58B5A → little accents, stars, icons
+White #FFFFFF → cards/navbar
