@@ -19,10 +19,12 @@
   <body>
     <!-- Preloader HTML -->
     <div id="preloader">
-        <div class="greet"><h1>Welcome 🎀</h1></div>
+      <div class="greet"><h1>Welcome 🎀</h1></div>
       <div class="spinner-box">
         <div class="loader-spinner"></div>
-      <div class="loader-image"><img src="./Images/pngwing.com.png" alt="preloader iamge"></div>
+        <div class="loader-image">
+          <img src="./Images/pngwing.com.png" alt="preloader iamge" />
+        </div>
       </div>
       <div class="loader-text">Find Your Best Comfort | Viora Home...</div>
     </div>
@@ -38,23 +40,43 @@
     </div>
 
     <!-- Navbar -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="./Images/pngwing.com.png"
+            width="40"
+            height="40"
+            alt="Logo"
+          />
+          Viora Home
+        </div>
 
-    <div class="navbar-container">
-      <div class="left-container">
-        <img src="" alt="" class="logo" />
-        <h2>Viora Home</h2>
-      </div>
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search for your asthetics $ comfort..."
+          />
+        </div>
 
-      <div class="right-container">
-        <ul class="nav-list">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About Us">About Us</a></li>
-          <li><a href="#Products">Products</a></li>
-          <li><a href="#Reviews">Reviews</a></li>
-          <li><a href="#Contact Us">Contact Us</a></li>
-        </ul>
+        <li><a href="#Home">Home</a></li>
+        <div class="dropdwon">
+          <li><a href="#Items">Items</a></li>
+          <div class="dropdown-menu">
+            <a href="#">For Walls</a>
+            <a href="#">For Vanity</a>
+            <a href="#">Beautiful Mirrors</a>
+            <a href="#">For Comfort</a>
+            <a href="#">For Asthetics</a>
+            <a href="#">The Tick Collection</a>
+          </div>
+        </div>
+        <li><a href="#About">About Us</a></li>
+        <li><a href="#Reviews">Reviews</a></li>
+        <li><a href="#Contact">Contact us</a></li>
+        <li><a href="#Help">Help</a></li>
       </div>
-    </div>
+    </header>
 
     <!-- Home section -->
     <section class="home">
