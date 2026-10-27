@@ -226,3 +226,115 @@ header {
   display: block;
 }
 
+/* Home  */
+
+.home{
+   background: linear-gradient(135deg, #ece2e8 0%, #d382b4 50%, #eee6eb 100%);
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 70px;
+}
+
+.container{
+   max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.left{
+   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.left h2 {
+  color: #380125;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.left p {
+  color: #6b0a49;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+.left button {
+  padding: 14px 36px;
+  background-color: #380125;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.right img{
+   padding: 30px;
+   width: 300px;
+   height: 300px;
+   object-fit: cover;
+}
+
+.left button:hover {
+  background-color: #ffd700;
+  color: #380125;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+  transform: translateY(-3px);
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.right img {
+  width: 100%;
+  max-width: 420px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.right img:hover {
+  transform: scale(1.02);
+  border-color: #380125;
+}
+
+.right p {
+  position: absolute;
+  bottom: -15px;
+  background: rgba(56, 1, 37, 0.9);
+  color: #ffd700;
+  padding: 10px 24px;
+  border-radius: 25px;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  font-size: 15px;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
