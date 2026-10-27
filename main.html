@@ -1,67 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viora-Home</title>
-    <!-- 1. AOS CSS Link  -->
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Style Sheet link -->
-    <link rel="stylesheet" href="main.css">
-    <!-- Favicon  -->
-</head>
-<body>
-    
+
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Preloader HTML -->
+    <div id="preloader">
+        <div class="greet"><h1>Welcome 🎀</h1></div>
+      <div class="spinner-box">
+        <div class="loader-spinner"></div>
+      <div class="loader-image"><img src="./Images/pngwing.com.png" alt="preloader iamge"></div>
+      </div>
+      <div class="loader-text">Find Your Best Comfort | Viora Home...</div>
+    </div>
+
     <!-- HeadLine -->
 
-     <div class="announcement-bar">
-        <div class="scrolling-text">
-            ✨ Elevate Your Space • Curated Decor for Beautiful Living • New Arrivals Just Dropped • Make Your Home Beautiful, Your Way ✨
-        </div>
-     </div>
+    <div class="announcement-bar">
+      <div class="scrolling-text">
+        ✨ Elevate Your Space • Curated Decor for Beautiful Living • New
+        Arrivals Just Dropped • Make Your Home Beautiful, Your Way ✨ | I hope
+        you enjoy it! Thanks for visiting
+      </div>
+    </div>
 
     <!-- Navbar -->
 
     <div class="navbar-container">
+      <div class="left-container">
+        <img src="" alt="" class="logo" />
+        <h2>Viora Home</h2>
+      </div>
 
-        <div class="left-container">
-          <img src="" alt="" class="logo">
-          <h2>Voira Home</h2>
-        </div>
-
-        <div class="right-container">
-            <ul class="nav-list">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About Us">About Us</a></li>
-                <li><a href="#Products">Products</a></li>
-                <li><a href="#Reviews">Reviews</a></li>
-                <li><a href="#Contact Us">Contact Us</a></li>
-            </ul>
-        </div>
+      <div class="right-container">
+        <ul class="nav-list">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About Us">About Us</a></li>
+          <li><a href="#Products">Products</a></li>
+          <li><a href="#Reviews">Reviews</a></li>
+          <li><a href="#Contact Us">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- Home section -->
     <section class="home">
-        <div class="container">
-            <div class="left">
-                <h2>Make Your Space Beautifully Yours</h2>
-                <p>Discover timeless home décor pieces, thoughtfully curated to bring warmth, character, and effortless style to every corner of your home</p>
+      <div class="container">
+        <div class="left">
+          <h2>Make Your Space Beautifully Yours</h2>
+          <p>
+            Discover timeless home décor pieces, thoughtfully curated to bring
+            warmth, character, and effortless style to every corner of your home
+          </p>
 
-                <button>Explore</button>
-            </div>
-
-            <div class="right">
-                <img src="" alt="">
-                <p>Rating</p>
-            </div>
+          <button>Explore</button>
         </div>
+
+        <div class="right">
+          <img src="" alt="" />
+          <p>Rating</p>
+        </div>
+      </div>
     </section>
-
-
-
-
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
