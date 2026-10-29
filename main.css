@@ -411,3 +411,117 @@ span a:hover{
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
 }
+
+/* items */
+
+.items-container {
+  background: linear-gradient(135deg, #200015 0%, #380125 50%, #15000e 100%);
+  width: 100%;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items-container h1 {
+  color: #ffd700;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin-bottom: 50px;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.item-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.card {
+  background: rgba(104, 4, 66, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #ffd700;
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.25);
+  background: rgba(104, 4, 66, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  color: #ffd700;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #e2d9f3;
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.card p a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.card p a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.card button {
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #ffd700;
+  color: #380125;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
