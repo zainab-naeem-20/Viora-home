@@ -340,7 +340,7 @@ header {
 }
 
 .featured {
-  background: linear-gradient(135deg, #200015 0%, #7a1958 50%, #48032d 100%);
+    background: linear-gradient(135deg, #ece2e8 0%, #d382b4 50%, #eee6eb 100%);
   width: 100%;
   padding: 80px 40px;
   display: flex;
@@ -352,7 +352,7 @@ header {
 }
 
 .featured h1 {
-  color: #ffd700;
+  color: #200015;
   font-size: 42px;
   font-weight: 800;
   font-style: italic;
@@ -362,8 +362,9 @@ header {
 }
 
 .featured p {
-  color: #eee6eb;
+  color: #680442;
   font-size: 18px;
+  font-weight: 700;
   font-weight: 600;
   font-style: italic;
   line-height: 1.7;
@@ -382,7 +383,7 @@ header {
 }
 
 .featured-elements span {
-  background: rgba(104, 4, 66, 0.4);
+  background: #380125;
   color: #e2d9f3;
   padding: 14px 28px;
   border-radius: 30px;
