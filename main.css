@@ -363,7 +363,7 @@ header {
 
 .featured p {
   color: #680442;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
   font-weight: 600;
   font-style: italic;
@@ -416,9 +416,9 @@ span a:hover{
 /* items */
 
 .items-container {
-  background: linear-gradient(135deg, #200015 0%, #380125 50%, #15000e 100%);
+  background: linear-gradient(135deg,  #380125 0%, #380125 50%, #15000e 100%);
   width: 100%;
-  padding: 80px 40px;
+  padding: 50px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -430,7 +430,7 @@ span a:hover{
   font-weight: 700;
   text-align: center;
   letter-spacing: 1.5px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
 }
 
@@ -525,4 +525,33 @@ span a:hover{
   background-color: #ffd700;
   color: #380125;
   box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.feature-btn{
+  background-color: #380125;
+  border: 2px solid #ffd700;
+  border-radius: 70px;
+  color: #ffd700;
+  font-weight: 800;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.feature-btn a{
+  color: #ffd700;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.feature-btn:hover{
+  background-color: #ffd700;
+  color: #200015;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.feature-btn a:hover{
+  background-color: #ffd700;
+  color: #200015;
+  font-weight: 700;
+  text-decoration: underline;
 }
