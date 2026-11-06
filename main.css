@@ -39,8 +39,8 @@
   background: #6b0a49;
   background: linear-gradient(
     183deg,
-    rgba(107, 10, 73, 1) 0%,
-    rgb(189, 24, 112) 46%,
+    #200015 0%,
+    #680442 46%,
     rgba(194, 201, 60, 0.99) 100%
   );
   display: flex;
