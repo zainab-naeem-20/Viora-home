@@ -1,11 +1,467 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viora-Home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Playfair Display", serif;
+      }
+
+      .announcement-bar {
+        background: #200015;
+        color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 10px;
+        letter-spacing: 2px;
+      }
+
+      .scrolling-text {
+        display: inline-block;
+        padding-left: 100%;
+        animation: scrollText 15s linear infinite;
+      }
+
+      @keyframes scrollText {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(-100%);
+        }
+      }
+
+      /* Navbar */
+
+      header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: #200015;
+        border-top: 1px solid #ffd700;
+        box-shadow: 0 4px 20px rgba(104, 2, 82, 0.5);
+        z-index: 1000;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 40px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #ffd700;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .logo img {
+        object-fit: contain;
+      }
+
+      .search input {
+        width: 320px;
+        padding: 10px 18px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border: 2px solid rgba(212, 175, 55, 0.3);
+        border-radius: 30px;
+        color: #e2d9f3;
+        font-size: 14px;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+
+      .search input::placeholder {
+        color: rgba(226, 217, 243, 0.5);
+      }
+
+      .search input:focus {
+        border-color: #ffd700;
+        background-color: rgba(255, 255, 255, 0.12);
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+      }
+
+      .navbar li {
+        list-style: none;
+      }
+
+      .navbar > li > a,
+      .navbar .dropdwon > li > a {
+        color: #e2d9f3;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        padding: 8px 12px;
+        transition: color 0.3s ease;
+      }
+
+      .navbar > li > a:hover,
+      .navbar .dropdwon > li > a:hover {
+        color: #ffd700;
+        border-bottom: 2px solid #ffd700;
+      }
+
+      .dropdwon {
+        position: relative;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #380125;
+        min-width: 210px;
+        padding: 12px 0;
+        border-radius: 10px;
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        z-index: 100;
+      }
+
+      .dropdown-menu a {
+        display: block;
+        padding: 10px 20px;
+        color: #e2d9f3;
+        text-decoration: none;
+        font-size: 15px;
+        transition: all 0.3s ease;
+      }
+
+      .dropdown-menu a:hover {
+        background-color: #680442;
+        color: #ffd700;
+        padding-left: 25px;
+        border-bottom: 2px solid #ffd700;
+      }
+
+      .dropdwon:hover .dropdown-menu {
+        display: block;
+      }
+
+      .viora-footer {
+        background: linear-gradient(180deg, #15000e 0%, #0d0008 100%);
+        color: #e2d9f3;
+        padding: 60px 40px 20px 40px;
+        border-top: 1px solid rgba(212, 175, 55, 0.3);
+        font-family: inherit;
+      }
+
+      .footer-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+        gap: 40px;
+        padding-bottom: 40px;
+      }
+
+      .footer-col h2 {
+        color: #ffd700;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+      }
+
+      .footer-col h3 {
+        color: #ffd700;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .brand-col p {
+        color: #e2d9f3;
+        font-size: 14px;
+        line-height: 1.7;
+        opacity: 0.85;
+        margin-bottom: 20px;
+        max-width: 320px;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 12px;
+      }
+
+      .social-icons a,
+      .mini-socials a {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(104, 4, 66, 0.3);
+        border: 1px solid rgba(212, 175, 55, 0.4);
+        color: #ffd700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.3s ease;
+      }
+
+      .social-icons a:hover,
+      .mini-socials a:hover {
+        background: #ffd700;
+        color: #380125;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        transform: translateY(-3px);
+      }
+
+      .footer-col ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 12px;
+      }
+
+      .footer-col ul li a {
+        color: #e2d9f3;
+        text-decoration: none;
+        font-size: 14px;
+        opacity: 0.85;
+        transition: all 0.3s ease;
+      }
+
+      .footer-col ul li a:hover {
+        color: #ffd700;
+        opacity: 1;
+        padding-left: 5px;
+      }
+
+      .contact-col p {
+        font-size: 14px;
+        margin-bottom: 12px;
+        opacity: 0.85;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .contact-col p i {
+        color: #ffd700;
+      }
+
+      .dev-btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 22px;
+        background-color: transparent;
+        color: #ffd700;
+        border: 2px solid #ffd700;
+        border-radius: 25px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .dev-btn:hover {
+        background-color: #ffd700;
+        color: #380125;
+        box-shadow: 0 0 18px rgba(255, 215, 0, 0.4);
+        transform: translateY(-2px);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(212, 175, 55, 0.15);
+        padding-top: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .footer-bottom p {
+        font-size: 14px;
+        opacity: 0.8;
+        margin: 0;
+      }
+
+      .developer-credit {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 13px;
+        color: #e2d9f3;
+        opacity: 0.9;
+      }
+
+      .mini-socials {
+        display: flex;
+        gap: 8px;
+      }
+
+      .mini-socials a {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HeadLine -->
+
+    <div class="announcement-bar">
+      <div class="scrolling-text">
+        ✨ Elevate Your Space • Curated Decor for Beautiful Living • New
+        Arrivals Just Dropped • Make Your Home Beautiful, Your Way ✨ | I hope
+        you enjoy it! Thanks for visiting
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="./Images/pngwing.com.png"
+            width="40"
+            height="40"
+            alt="Logo"
+          />
+          Viora Home
+        </div>
+
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search for your asthetics $ comfort..."
+          />
+        </div>
+
+        <li><a href="index.html">Home</a></li>
+        <div class="dropdwon">
+          <li><a href="items.html">Items</a></li>
+          <div class="dropdown-menu">
+            <a href="wall.html">For Walls</a>
+            <a href="vanity.html">For Vanity</a>
+            <a href="mirror.html">Beautiful Mirrors</a>
+            <a href="comfort.html">For Comfort</a>
+            <a href="asthetic.html">For Asthetics</a>
+            <a href="tick.html">The Tick Collection</a>
+          </div>
+        </div>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="help.html">Help</a></li>
+      </div>
+    </header>
+
+    <!-- 3. FOOTER SECTION -->
+    <footer class="viora-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <h2>Viora Home</h2>
+          <p>
+            The Essence of Home Luxury. Crafting aesthetic decor and modern
+            comfort pieces that bring warmth and elegance to your sanctuary.
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/zainab-naeem-1ab38a312/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/zainab-naeem-20"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="mailto:contact@viorahome.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="wall.html">Wall Clocks</a></li>
+            <li><a href="mirror.html">Mirrors</a></li>
+            <li><a href="vanity.html">Vanity Tables</a></li>
+            <li><a href="asthetic.html">Asthetic Lamps</a></li>
+            <li><a href="sofa.html">Comfort Sofas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="index.html">Privacy Policy</a></li>
+            <li><a href="index.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h3>Contact</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 2014, Vior's Collection,
+            Karachi
+          </p>
+          <p><i class="fas fa-phone"></i> +92 (300) 845-4557</p>
+          <p><i class="fas fa-envelope"></i> info@viorahome.com</p>
+
+          <a href="me.html" class="dev-btn">Meet the Developer</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Viora Home. All rights reserved.</p>
+        <div class="developer-credit">
+          <span>Designed & Developed by Zainab Naeem</span>
+          <div class="mini-socials">
+            <a
+              href="https://www.linkedin.com/in/zainab-naeem-1ab38a312/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/zainab-naeem-20" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
