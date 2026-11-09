@@ -388,7 +388,104 @@
         text-align: center;
       }
 
-      
+      * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.about-story {
+  width: 100%;
+  background-color: #200015;
+  padding: 80px 20px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.about-story h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #ffffff;
+  font-family: 'Cinzel', 'Playfair Display', serif, sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.about-story h1::before {
+  content: "THE HOUSE";
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 4px;
+  color: #c5a059;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.about-story h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #c5a059, #e5c158);
+  margin: 15px auto 60px auto;
+  border-radius: 2px;
+}
+
+.about-story .main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.about-story .left {
+  flex: 1;
+  max-width: 550px;
+}
+
+.about-story .left p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #b0a8b3;
+  margin-bottom: 24px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+.about-story .left p:first-child {
+  font-size: 0.95rem;
+  color: #b0a8b3;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 24px;
+}
+
+.about-story .left button {
+  display: none;
+}
+
+.about-story .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-story .right img {
+  width: 100%;
+  max-width: 520px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
     </style>
   </head>
   <body>
@@ -472,17 +569,38 @@
 
       <div class="about-story">
         <h1>Story behind Viora Home</h1>
+        <div class="main">
+          <div class="left">  
+            <p>Read Our story</p>
+            <p>
+              Viora Home was created with a simple yet beautiful vision: to make
+              every home feel special, elegant, and full of life. We believe
+              that a home is more than just four walls; it is a place where
+              memories are made, dreams grow, and personalities shine. Every
+              little detail has the power to transform an ordinary space into
+              something truly meaningful.
+            </p>
+            <p>
+              Our passion for home decor comes from the belief that beauty lives
+              in the little things. From elegant decorative accessories and
+              stylish furniture to charming home essentials, we bring together
+              pieces that add warmth, comfort, and sophistication to your
+              surroundings.
+            </p>
+            <p>
+              At Viora Home, our journey is all about inspiring beautiful
+              living. We want to make it easier for everyone to create spaces
+              they love, whether it's a cozy corner, a modern living room, or a
+              welcoming home. Your home tells your story, and we are here to
+              help you make every part of it beautiful. Viora Home – Where
+              Elegance Meets Comfort.
+            </p>
+            <button><a href="items.html">Explore Our Collections</a></button>
+          </div>
 
-        <div class="left">
-          <p>Read Our story</p>
-          <p>Viora Home was created with a simple yet beautiful vision: to make every home feel special, elegant, and full of life. We believe that a home is more than just four walls; it is a place where memories are made, dreams grow, and personalities shine. Every little detail has the power to transform an ordinary space into something truly meaningful.</p>
-          <p>Our passion for home decor comes from the belief that beauty lives in the little things. From elegant decorative accessories and stylish furniture to charming home essentials, we bring together pieces that add warmth, comfort, and sophistication to your surroundings.</p>
-          <p>At Viora Home, our journey is all about inspiring beautiful living. We want to make it easier for everyone to create spaces they love, whether it's a cozy corner, a modern living room, or a welcoming home. Your home tells your story, and we are here to help you make every part of it beautiful. Viora Home – Where Elegance Meets Comfort.</p>
-          <button><a href="items.html">Explore Our Collections</a></button>
-        </div>
-
-        <div class="right">
-          <img src="./Images/UC-4.jpg" alt="">
+          <div class="right">
+            <img src="./Images/UC-4.jpg" alt="" />
+          </div>
         </div>
       </div>
     </section>
