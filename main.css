@@ -225,6 +225,18 @@ header {
   display: block;
 }
 
+.nav-icon {
+  color: #ffd700 !important;
+  font-size: 20px !important;
+  padding: 8px !important;
+  transition: 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: white !important;
+  transform: scale(1.15);
+}
+
 /* Home  */
 
 .home {
