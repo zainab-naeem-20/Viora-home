@@ -389,103 +389,212 @@
       }
 
       * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
+      .about-story {
+        width: 100%;
+        background-color: #200015;
+        padding: 80px 20px;
+        color: #ffffff;
+        box-sizing: border-box;
+      }
 
-.about-story {
-  width: 100%;
-  background-color: #200015;
-  padding: 80px 20px;
-  color: #ffffff;
-  box-sizing: border-box;
-}
+      .about-story h1 {
+        text-align: center;
+        font-size: 2.8rem;
+        color: #ffffff;
+        font-family: "Cinzel", "Playfair Display", serif, sans-serif;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        position: relative;
+      }
 
-.about-story h1 {
-  text-align: center;
-  font-size: 2.8rem;
-  color: #ffffff;
-  font-family: 'Cinzel', 'Playfair Display', serif, sans-serif;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  position: relative;
-}
+      .about-story h1::before {
+        content: "THE HOUSE";
+        display: block;
+        font-size: 0.75rem;
+        letter-spacing: 4px;
+        color: #c5a059;
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
 
-.about-story h1::before {
-  content: "THE HOUSE";
-  display: block;
-  font-size: 0.75rem;
-  letter-spacing: 4px;
-  color: #c5a059;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
+      .about-story h1::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: linear-gradient(90deg, #c5a059, #e5c158);
+        margin: 15px auto 60px auto;
+        border-radius: 2px;
+      }
 
-.about-story h1::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 2px;
-  background: linear-gradient(90deg, #c5a059, #e5c158);
-  margin: 15px auto 60px auto;
-  border-radius: 2px;
-}
+      .about-story .main {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+      }
 
-.about-story .main {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-}
+      .about-story .left {
+        flex: 1;
+        max-width: 550px;
+      }
 
-.about-story .left {
-  flex: 1;
-  max-width: 550px;
-}
+      .about-story .left p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: #b0a8b3;
+        margin-bottom: 24px;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+      }
 
-.about-story .left p {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  color: #b0a8b3;
-  margin-bottom: 24px;
-  font-weight: 300;
-  letter-spacing: 0.3px;
-}
+      .about-story .left p:first-child {
+        font-size: 0.95rem;
+        color: #b0a8b3;
+        font-weight: 300;
+        text-transform: none;
+        letter-spacing: normal;
+        margin-bottom: 24px;
+      }
 
-.about-story .left p:first-child {
-  font-size: 0.95rem;
-  color: #b0a8b3;
-  font-weight: 300;
-  text-transform: none;
-  letter-spacing: normal;
-  margin-bottom: 24px;
-}
+      .about-story .left button {
+        display: none;
+      }
 
-.about-story .left button {
-  display: none;
-}
+      .about-story .right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
 
-.about-story .right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
+      .about-story .right img {
+        width: 100%;
+        max-width: 520px;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+      }
 
-.about-story .right img {
-  width: 100%;
-  max-width: 520px;
-  height: 380px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-}
+      .extra {
+        padding: 60px 10% 80px 10%;
+        text-align: center;
+        background-color: #380125;
+        font-family: "Playfair Display", "Georgia", serif;
+      }
 
+      .extra h1 {
+        color: #ffd700;
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+      }
+
+      .extra-items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 25px;
+        justify-content: center;
+        align-items: stretch;
+      }
+
+      .item {
+        background: #200015;
+        border: 2px solid #ffd700;
+        padding: 30px 20px;
+        border-radius: 8px;
+        text-align: center;
+        transition: all 0.4s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .item:hover {
+        transform: translateY(-8px);
+        background: #200015;
+        border-color: #ffd700;
+        box-shadow: 0 0 15px 2px #e5c158;
+      }
+
+      .item h3 {
+        color: #ffd700;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+
+      .item p {
+        color: #e0d5d5;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .explore-section {
+        padding: 80px 10%;
+        text-align: center;
+        background:
+          linear-gradient(
+            135deg,
+            rgba(56, 1, 37, 0.85) 0%,
+            rgba(21, 0, 14, 0.95) 100%
+          ),
+          url(./Images/back1.jpg);
+      }
+
+      .explore-content {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .explore-content h2 {
+        color: #ffd700;
+        font-size: 45px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+
+      .explore-content p {
+        color: #e0d5d5;
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 35px;
+      }
+
+      .explore-btn {
+        display: inline-block;
+        padding: 12px 35px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #1a030d;
+        background-color: #ffd700;
+        text-decoration: none;
+        border-radius: 8px;
+        border: 1px solid #ffd700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .explore-btn:hover {
+        background-color: transparent;
+        color: #ffd700;
+        box-shadow: 0 0 15px 2px rgba(255, 215, 0, 0.6);
+        transform: translateY(-5px);
+      }
     </style>
   </head>
   <body>
@@ -570,7 +679,7 @@
       <div class="about-story">
         <h1>Story behind Viora Home</h1>
         <div class="main">
-          <div class="left">  
+          <div class="left">
             <p>Read Our story</p>
             <p>
               Viora Home was created with a simple yet beautiful vision: to make
@@ -602,6 +711,56 @@
             <img src="./Images/UC-4.jpg" alt="" />
           </div>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="extra">
+        <h1>What we offer for our customers</h1>
+        <div class="extra-items">
+          <div class="item1 item">
+            <h3>Transforming Spaces</h3>
+            <p>
+              We blend functionality with aesthetics to design spaces that
+              reflect your unique personality.
+            </p>
+          </div>
+
+          <div class="item2 item">
+            <h3>Handcrafted Elegance for Your Home</h3>
+            <p>
+              We blend functionality with aesthetics to design spaces that
+              reflect your unique personality.
+            </p>
+          </div>
+
+          <div class="item3 item">
+            <h3>Smart Designs for Modern Living</h3>
+            <p>
+              Maximize every square inch of your home with our intelligent
+              layout planning
+            </p>
+          </div>
+
+          <div class="item4 item">
+            <h3>Hassle-Free Home Makeovers</h3>
+            <p>
+              Sit back and relax while we handle everything from scratch. Our
+              full-service renovation covers design
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-section">
+      <div class="explore-content">
+        <h2>Explore Viora's Collection</h2>
+        <p>
+          Discover our exclusive range of premium interior decor and custom
+          artifacts designed to turn your space into a luxurious sanctuary.
+        </p>
+        <a href="items.html" class="explore-btn">Explore</a>
       </div>
     </section>
 
