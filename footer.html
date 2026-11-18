@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viora-Home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+        
+.viora-footer {
+  background: linear-gradient(180deg, #15000e 0%, #0d0008 100%);
+  color: #e2d9f3;
+  padding: 60px 40px 20px 40px;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  font-family: inherit;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-col h2 {
+  color: #ffd700;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer-col h3 {
+  color: #ffd700;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.brand-col p {
+  color: #e2d9f3;
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.85;
+  margin-bottom: 20px;
+  max-width: 320px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a,
+.mini-socials a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(104, 4, 66, 0.3);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #ffd700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover,
+.mini-socials a:hover {
+  background: #ffd700;
+  color: #380125;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  transform: translateY(-3px);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  color: #e2d9f3;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffd700;
+  opacity: 1;
+  padding-left: 5px;
+}
+
+.contact-col p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-col p i {
+  color: #ffd700;
+}
+
+.dev-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 22px;
+  background-color: transparent;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dev-btn:hover {
+  background-color: #ffd700;
+  color: #380125;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  padding-top: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.developer-credit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: #e2d9f3;
+  opacity: 0.9;
+}
+
+.mini-socials {
+  display: flex;
+  gap: 8px;
+}
+
+.mini-socials a {
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- 3. FOOTER SECTION -->
+    <footer class="viora-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <h2>Viora Home</h2>
+          <p>
+            The Essence of Home Luxury. Crafting aesthetic decor and modern
+            comfort pieces that bring warmth and elegance to your sanctuary.
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/zainab-naeem-1ab38a312/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/zainab-naeem-20"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="mailto:contact@viorahome.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="wall.html">Wall Clocks</a></li>
+            <li><a href="mirror.html">Mirrors</a></li>
+            <li><a href="vanity.html">Vanity Tables</a></li>
+            <li><a href="asthetic.html">Asthetic Lamps</a></li>
+            <li><a href="sofa.html">Comfort Sofas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="index.html">Privacy Policy</a></li>
+            <li><a href="index.html">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h3>Contact</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 2014, Vior's Collection,
+            Karachi
+          </p>
+          <p><i class="fas fa-phone"></i> +92 (300) 845-4557</p>
+          <p><i class="fas fa-envelope"></i> info@viorahome.com</p>
+
+          <a href="me.html" class="dev-btn">Meet the Developer</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Viora Home. All rights reserved.</p>
+        <div class="developer-credit">
+          <span>Designed & Developed by Zainab Naeem</span>
+          <div class="mini-socials">
+            <a
+              href="https://www.linkedin.com/in/zainab-naeem-1ab38a312/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/zainab-naeem-20" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+        AOS.init({
+        duration: 1000,
+        once: true
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const preloader = document.getElementById("preloader");
+    
+    if (preloader) {
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                preloader.style.opacity = "0";
+                setTimeout(() => {
+                    preloader.style.display = "none";
+                }, 500);
+            }, 2000); 
+        });
+    }
+});
+    </script>
+  </body>
+
+</html>
